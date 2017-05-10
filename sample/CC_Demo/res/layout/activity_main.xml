@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_ip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_button_tp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TP"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_ms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MS"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_group_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_ip"
+            android:layout_marginBottom="32dp"
+            android:layout_toRightOf="@+id/radio_group_platform"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_button_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_https"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_group_call_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_ip"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_button_tls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TLS"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_udp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UDP"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="70dp"
+            android:text="@string/address"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_ip"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_ip"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:text="172.22.9.40"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/tv_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ip"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:text="@string/port"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/et_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_port"
+            android:layout_below="@+id/tv_ip"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_port"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:text="8280"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_port"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:text="@string/name"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_below="@+id/tv_port"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:editable="true"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/login"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_layout"
+        android:layout_marginTop="2dp"
+        android:background="#000000"
+        >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/button_get_verifycode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="@string/get_varifycode"
+            />
+
+        <ImageView
+            android:id="@+id/iamgeview_verifycode"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/button_get_verifycode"
+            android:layout_marginTop="1dp"
+            />
+        <EditText
+            android:id="@+id/edittext_verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/iamgeview_verifycode"
+            android:hint="@string/input_varifycode"
+            android:inputType="number"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:layout_marginTop="1dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_setcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="@string/access_code"
+            android:layout_below="@+id/button_get_verifycode"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/et_accessCode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_setcode"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:text="1007"
+            android:layout_toRightOf="@+id/tv_setcode"/>
+
+        <Button
+            android:id="@+id/btn_Call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/et_accessCode"
+            android:layout_below="@+id/edittext_verifycode"
+            android:layout_marginLeft="5dp"
+            android:text="@string/call"/>
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_setcode"
+
+            android:layout_marginTop="13dp"
+            android:text="@string/call_data"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etData"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_data"
+            android:layout_below="@+id/tv_setcode"
+            android:layout_marginLeft="5dp"
+            android:layout_alignRight="@+id/et_accessCode"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:ellipsize="start"
+
+            />
+        <LinearLayout
+            android:id="@+id/layout_sip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/btn_exit"
+            android:visibility="visible">
+        <EditText
+            android:id="@+id/etSIPAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/set_sip_address"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:layout_weight="1"
+            android:textSize="14dp"
+           />
+            <EditText
+                android:id="@+id/etSIPPort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/set_sip_port"
+                android:inputType="number"
+                android:singleLine="true"
+                android:ellipsize="start"
+                android:layout_weight="1"
+                android:textSize="14dp"
+
+               />
+            <EditText
+                android:id="@+id/etAudioAccessCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/set_audio_accesscode"
+                android:singleLine="true"
+                android:ellipsize="start"
+                android:layout_weight="1"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/logout"/>
+    </RelativeLayout>
+
+</RelativeLayout>

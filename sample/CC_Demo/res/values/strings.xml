@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CC_Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login_fail">Login fail! errorCode is:</string>
+    <string name="login_success">Login success</string>
+    <string name="logout_fail">Logout fail! errorCode is:</string>
+    <string name="logout_success">Logout success</string>
+
+    <string name="get_varifycode_fail">Get varifycode fail</string>
+    <string name="input_varifycode">varifycode</string>
+    <string name="get_varifycode">get varifycode</string>
+    <string name="set_call_bandwidth">Set call bandwidth</string>
+    <string name="please_input_bandwidth">please input bandwidth：  (Kbit/s)</string>
+    <string name="input_bandwidth">Input bandwidth：1-768</string>
+    <string name="input_is_null">Input is null</string>
+    <string name="input_beyond_limit">Input beyond limit</string>
+    <string name="set_success">Set success</string>
+    <string name="set_fail">Set fail</string>
+    <string name="image_quality_priority">Image quality priority</string>
+    <string name="fluency_priority">Fluency priority</string>
+    <string name="retype_name_error">Name error,Please retype</string>
+    <string name="net_settings_error">Net settings error</string>
+    <string name="make_call_error">Make call error</string>
+    <string name="queuing">Queuing</string>
+    <string name="get_queue_info_error">Get queue info error,errorCode is:</string>
+    <string name="not_queue_status_error">Not queue status,statusCode is:</string>
+    <string name="call_fail_return">Call fail1!Please return and retry</string>
+    <string name="call_end">Call end!</string>
+    <string name="cancel_queue_success">Cancel queue success</string>
+    <string name="queue_timeout">Queue timeout</string>
+    <string name="net_loop_fail">Net unstable</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="connect_fail">Connect fail,errorCode is:</string>
+    <string name="no_stream_info">No stream info,retry</string>
+    <string name="dropcall_fail">Drop call fail</string>
+    <string name="resume">Resume</string>
+    <string name="mute_mic">MuteMic</string>
+    <string name="mute_speaker">MuteSpeaker</string>
+    <string name="speaker_mode">Speaker mode</string>
+    <string name="receiver_mode">Receiver mode</string>
+    <string name="intent_error">Intent error</string>
+
+
+    <string name="send_framsize"> Send framsize:</string>
+    <string name="receive_framsize"> Receive framesize:</string>
+
+    <string name="frame_rate"> ,Frame rate:</string>
+    <string name="bit_rate"> ,Bit rate:</string>
+    <string name="loss_rate">,Loss rate:</string>
+    <string name="delay"> %,Delay:</string>
+    <string name="jitter"> ms,Jitter:</string>
+    <string name="text_send_fail">Text send fail,errorCode is:</string>
+    <string name="calling">Calling</string>
+    <string name="apply_meeting_fail">Apply meeting fail,errorCode is:</string>
+    <string name="apply_meeting_success">Apply meeting success</string>
+    <string name="hang_up">hang up</string>
+    <string name="call_success">Call success</string>
+    <string name="audio_call">Audio call</string>
+    <string name="audio_call_disconnect">Audio ability disconnect</string>
+    <string name="text_disconnect">Text disconnect</string>
+    <string name="text_connect">Text connect</string>
+    <string name="text_connect_fail">Text connect fail,errorCode is:</string>
+    <string name="audio_connect_fail">Audio connect fail,errorCode is:</string>
+    <string name="exit_meeting">Exit meeting</string>
+    <string name="exit_meeting_fail">Exit meeting fail</string>
+
+
+    <string name="video_info">VideoInfo</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="switch_audio">Switch audio</string>
+    <string name="rotate">rotate</string>
+    <string name="cancel_queue">Cancel queue</string>
+    <string name="queue_info">Queue Info</string>
+    <string name="back">Back</string>
+    <string name="change_video_mode">VideoMode</string>
+    <string name="send">Send</string>
+    <string name="video">Video</string>
+    <string name="set_sip_address">sip address</string>
+    <string name="set_sip_port">sip port</string>
+    <string name="set_sip_info">Please input sip info correctly</string>
+    <string name="set_audio_accesscode">AudioCode</string>
+    <string name="set_audio_accesscode_error">Input audioAccessCode!</string>
+    <string name="position">position:</string>
+    <string name="online_agent_num">onlineAgentNum:</string>
+    <string name="longest_wait_time">longestWaitTime:</string>
+
+    <string name="address">Address</string>
+    <string name="port">Port</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="access_code">Access</string>
+    <string name="call">Call</string>
+    <string name="band_width">Bandwidth</string>
+    <string name="call_data">CallData</string>
+    <string name="logout">Logout</string>
+
+
+
+</resources>

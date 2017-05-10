@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Welcome to ICS"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/leaveChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvStatus"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tvStatus"
+            android:text="@string/back"/>
+
+        <Button
+            android:id="@+id/cancelQueue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvStatus"
+            android:layout_marginTop="25dp"
+            android:text="@string/cancel_queue"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/button_get_verifycode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancelQueue"
+            android:layout_marginTop="5dp"
+            android:text="@string/get_varifycode"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/iamgeview_verifycode"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/button_get_verifycode"
+            android:layout_below="@+id/cancelQueue"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/edittext_verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_get_verifycode"
+            android:hint="@string/input_varifycode"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/view_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/switch_audio"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/switch_audio"
+                android:textSize="10dp"
+                />
+
+            <Button
+                android:id="@+id/mute_audio"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mute_mic"
+                android:textSize="10dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="#d8e0e8"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/msg_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#0000"></ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="input msg"
+                android:maxLines="2"/>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send"/>
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_call"/>
+
+            <Button
+                android:id="@+id/btn_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

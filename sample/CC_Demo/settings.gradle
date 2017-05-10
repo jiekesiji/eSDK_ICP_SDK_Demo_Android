@@ -1,0 +1,2 @@
+include ':eSDK_CC_SDK'
+project(':eSDK_CC_SDK').projectDir = new File(settingsDir, '../../src/eSDK_CC_SDK')
